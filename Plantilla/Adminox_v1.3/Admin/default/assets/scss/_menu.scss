@@ -57,7 +57,7 @@
   z-index: 999;
 
   .topbar-left {
-    background: $dark;
+    background: $orange;
     float: left;
     text-align: center;
     height: 70px;
@@ -76,7 +76,7 @@
 }
 
 .navbar-custom {
-  background-color: $custom;
+  background-color:#FF0000;
   border-radius: 0;
   margin-bottom: 0;
   padding: 0 10px;
@@ -502,13 +502,13 @@
 
   .form-control,
   .form-control:focus {
-    border: 1px solid darken($custom, 10%);
+    border: 1px solid #43b39c;
     font-size: 13px;
     height: 34px;
-    color: $white;
+    color: red;
     padding-left: 20px;
     padding-right: 40px;
-    background: darken($custom, 10%);
+    background: #3c5651;
     box-shadow: none;
     border-radius: 30px;
     width: 200px;
@@ -698,5 +698,3 @@ body.enlarged.bg-transparent {
     width: 36px;
   }
 }
-
-

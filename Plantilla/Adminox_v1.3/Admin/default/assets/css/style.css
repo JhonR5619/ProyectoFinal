@@ -60,7 +60,7 @@ File: Main Css
 }
 
 .topbar .topbar-left {
-  background: #313a46;
+  background: #384084;
   float: left;
   text-align: center;
   height: 70px;
@@ -78,7 +78,7 @@ File: Main Css
 }
 
 .navbar-custom {
-  background-color: #64c5b1;
+  background-color:  #1b2263;
   border-radius: 0;
   margin-bottom: 0;
   padding: 0 10px;
@@ -187,7 +187,7 @@ File: Main Css
   display: inline-block;
   height: 70px;
   width: 60px;
-  background-color: #64c5b1;
+  background-color: #384084;
   font-size: 16px;
 }
 
@@ -271,12 +271,13 @@ File: Main Css
   background-color: #2f3642;
 }
 
+
 .menu-title {
   padding: 12px 20px !important;
   letter-spacing: .05em;
   pointer-events: none;
   cursor: default;
-  font-size: 11px;
+  font-size: 15px;
   text-transform: uppercase;
   color: #98a6ad;
   font-family: "Nunito Sans", sans-serif;
@@ -467,18 +468,18 @@ File: Main Css
 }
 
 .app-search a:hover {
-  color: #ffffff;
+  color: #1b2263;
 }
 
 .app-search .form-control,
 .app-search .form-control:focus {
-  border: 1px solid #43b39c;
+  border: 1px solid  rgb(212, 203, 236);
   font-size: 13px;
   height: 34px;
-  color: #ffffff;
+  color: white;
   padding-left: 20px;
   padding-right: 40px;
-  background: #43b39c;
+  background: #1b2263;
   box-shadow: none;
   border-radius: 30px;
   width: 200px;
@@ -679,7 +680,7 @@ body {
   overflow-x: hidden;
   color: #797979;
   font-size: 14px;
-  background-color: #f1f1f1;
+  background-color: white;
 }
 
 html {
@@ -870,18 +871,22 @@ a:focus {
 
 .w-xs {
   min-width: 80px;
+  margin-right:425px;
 }
 
 .w-sm {
   min-width: 95px;
+  margin-right:425px;
 }
 
 .w-md {
   min-width: 110px;
+  margin-right:425px;
 }
 
 .w-lg {
   min-width: 140px;
+  margin-right:425px;
 }
 
 .center-page {
@@ -1810,6 +1815,7 @@ a:focus {
 .btn-primary {
   background-color: #4489e4 !important;
   border: 1px solid #4489e4 !important;
+
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
@@ -1828,6 +1834,7 @@ a:focus {
 .btn-success {
   background-color: #32c861 !important;
   border: 1px solid #32c861 !important;
+
 }
 
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover, .open > .dropdown-toggle.btn-success {
@@ -4316,22 +4323,28 @@ textarea.form-control {
 ============= */
 .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
   padding: 12px 10px;
+
+
 }
 
 .table-condensed > tbody > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > thead > tr > th {
   padding: 7px;
+
 }
 
 .table-sm td, .table-sm th {
   padding: .3rem !important;
+
 }
 
 th {
   font-family: "Nunito Sans", sans-serif;
+
 }
 
 .table-centered td {
   vertical-align: middle !important;
+
 }
 
 /* Data table */
@@ -7033,13 +7046,14 @@ File: Responsive
 
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
-    background-color: #ffffff;
+    background-color: #384084;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     left: auto;
     position: absolute;
     right: 0;
   }
-  .navbar-nav .open .dropdown-menu li {
+  .navbar
+  -nav .open .dropdown-menu li {
     display: block;
   }
   .navbar-nav {
