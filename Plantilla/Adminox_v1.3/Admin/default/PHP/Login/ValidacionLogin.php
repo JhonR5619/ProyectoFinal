@@ -12,7 +12,7 @@
   $filas = mysql_num_rows($resultado);
 
   if($filas > 0 ){
-    header("location:index.html");
+    header("location:index.php");
   }else{
     echo "error en la autentificacion, por favor verifique sus datos e intente nuevamente ";
   }

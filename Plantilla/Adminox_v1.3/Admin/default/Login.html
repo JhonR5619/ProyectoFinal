@@ -6,11 +6,19 @@
     <link rel="stylesheet" href="assets/css/Login.css">
   </head>
   <body>
-    <form action="ValidacionLogin.php" method="post " class="col-md-6 col-xs-3">
-      <h2>Formulario de Login </h2>
-      <input type="text" placeholder="&#128273; Usuario" name="Usuario" id="Usuario">
-      <input type="password" placeholder="&#128274; Contraseña" name="Contraseña" id="Contraseña">
-      <input type="submit" name="" value="Ingresar">
-    </form>
+    <div class="error">
+      <span>Datos no válidos, por favor intente de nuevo </span>
+    </div>
+    <div class="main">
+      <form action=""  class="col-md-6 col-xs-3" id="formLogin" name="formLogin">
+        <h2>Formulario de Login </h2>
+        <input type="text" placeholder="&#128273; Usuario" name="usuario" id="usuario">
+        <input type="password" placeholder="&#128274; Contraseña" name="pass" id="pass">
+        <input type="submit" name="" value="Ingresar" id="btnIngresar" name="btnIngresar">
+      </form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/Login.js"></script>
+
   </body>
 </html>
