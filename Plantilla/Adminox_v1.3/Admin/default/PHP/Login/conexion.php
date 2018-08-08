@@ -1,7 +1,7 @@
 <?php
   $mysqli = new mysqli('localhost:8080','root','','DBVisitor');
-  if ($conexion->connect_error) {
-   die("La conexion falló: " . $conexion->connect_error);
+  if ($mysqli->connect_error) {
+   die("La conexion falló: " . $mysqli->connect_error);
   }
 
 

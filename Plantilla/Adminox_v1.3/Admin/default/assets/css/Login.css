@@ -51,14 +51,7 @@ h2{
     color: #1b2263;
 
 }
-/******** div de error ******/
-.error{
-    background-color: #E74F4F;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    display: none;
-}﻿
+
 
 input{
   display: block;
