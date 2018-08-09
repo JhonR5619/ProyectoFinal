@@ -7,15 +7,48 @@
   </head>
   <body>
 
-      <form action=""  class="col-md-6 col-xs-3" id="formLogin" name="formLogin">
+      <form action="file://C:/xampp/htdocs/ProyectoFinalCarcel/Plantilla/Adminox_v1.3/Admin/default/PHP/Login/InicioLogin.php"  class="col-md-6 col-xs-3" id="formLogin" name="formLogin">
         <h2>Formulario de Login </h2>
         <input type="text" placeholder="&#128273; Usuario" name="usuario" id="usuario">
         <input type="password" placeholder="&#128274; Contraseña" name="pass" id="pass">
         <input type="submit" name="" value="Ingresar" id="btnIngresar" name="btnIngresar">
-      </form>
 
-      <script src="assets/js/main.js"></script>
+      </form>
+      <script type="text/javascript">
+      $(.'#btnIngresar').click(function(){
+
+} ) ;
+
+      });
+
+
+      </script>
+      <!-- <script type="text/javascript">
+      jQuery(document).on('submit','#formLogin',function(event){
+        event.preventDefault();
+
+        jQuery.ajax({
+          url:'http://PHP/Login/login.php',
+          type: 'POST',
+          dataType:'Json',
+          data: $(this).serialize(),
+          beforeSend: function(){
+
+          }
+        })
+        .done(function(respuesta){
+          console.log(respuesta);
+        })
+        .fail(function(resp){
+          console.log(resp.responseText)
+        })
+        .always(function(){
+        console.log("complete");
+      });
+      });
+      </script> -->
       <script src="assets/js/jquery.min.js"></script>
+      
 
   </body>
 </html>

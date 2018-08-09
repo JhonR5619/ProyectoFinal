@@ -1,0 +1,36 @@
+/* Ubicación de la imagen */
+
+background-image: url(../images/users/ImagenCarcelLogin.jpg);
+
+/* Para dejar la imagen de fondo centrada, vertical y
+
+horizontalmente */
+
+background-position: center center;
+
+/* Para que la imagen de fondo no se repita */
+
+background-repeat: no-repeat;
+
+/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+
+background-attachment: fixed;
+
+/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+
+background-size: cover;
+
+
+<?php
+  session_start();
+  error_reporting(0);
+  $varsesion = $_Session['Usuario'];
+
+  if($varsesion == null || $varsesion = ''){
+    echo 'Usted no tiene autorizacion para entrar';
+    die();
+  }
+
+?>
+
+<td><button type="submit" class="btn btn-sm btn-primary btn-rounded w-md waves-effect waves-light pull-right">Elegir Imagen</button></td>

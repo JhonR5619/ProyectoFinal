@@ -426,7 +426,10 @@
                                           </tr>
                                           <tr>
                                             <td> <button  type="button"   class="btn btn-sm btn-primary btn-rounded w-md waves-effect waves-light pull-right" id="btnRegistrar" >Registrar Persona</button></td>
-                                            <td><button type="button" class="btn btn-sm btn-primary btn-rounded w-md waves-effect waves-light pull-right">Elegir Imagen</button></td>
+                                            <form class="" action="assets/PHP/file.php" method="post" enctype="multipart/form-data">
+                                              <td> <input type="file" name="archivo" id="archivo"> </td>
+
+                                            </form>
                                           </tr>
 
                                           </tbody>
@@ -472,7 +475,7 @@
         </div>
         <!-- END wrapper -->
 
-
+    
 
         <!-- jQuery  -->
         <script src="assets/js/jquery.min.js"></script>
