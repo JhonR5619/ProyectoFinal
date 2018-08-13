@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
@@ -154,7 +154,7 @@
                                 <a href="javascript: void(0);"><i class="fi-briefcase"></i> <span>Gestion de internos</span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                     <li><a href=" CrearVisitantes.php">Crear Internos</a></li>
-                                    <li><a href=" TarjetasInterno.php">Tarjeta de interno</a></li>
+                                    <li><a href="TarjetasInterno.php">Tarjeta de interno</a></li>
                                     <li><a href=" VisitasInterno.php">Visitas del interno</a></li>
                                     <li><a href=" ActualizarInterno.php">Actualizar interno</a></li>
                                 </ul>
@@ -177,7 +177,7 @@
                                   <li><a href=" CrearFuncionarios.php">Crear Funcionario</a></li>
                                   <li><a href=" PermisosFuncionarios.php">Permisos de Funcionario</a></li>
                                   <li><a href=" ActualizarFuncionarios.php">Actualizar Funcionarios</a></li>
-                                  <li><a href="#">Actividad De Funcionarios</a></li>
+                                   <li><a href="ActividadFuncionarios.php">Actividad De Funcionarios</a></li>
                                 </ul>
                             </li>
 

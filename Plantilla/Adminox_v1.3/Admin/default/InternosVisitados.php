@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
@@ -177,7 +177,7 @@
                                   <li><a href=" CrearFuncionarios.php">Crear Funcionario</a></li>
                                   <li><a href=" PermisosFuncionarios.php">Permisos de Funcionario</a></li>
                                   <li><a href=" ActualizarFuncionarios.php">Actualizar Funcionarios</a></li>
-                                  <li><a href="#">Actividad De Funcionarios</a></li>
+                                   <li><a href="ActividadFuncionarios.php">Actividad De Funcionarios</a></li>
                                 </ul>
                             </li>
 

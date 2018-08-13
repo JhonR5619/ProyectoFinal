@@ -59,3 +59,8 @@ background-size: cover;
       });
       });
       </script> -->
+
+============================================================
+<li>
+                                <a href="tickets.html"><i class="fi-help"></i><span class="badge badge-danger pull-right">New</span> <span> Tickets </span></a>
+                            </li>
