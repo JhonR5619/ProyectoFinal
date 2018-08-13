@@ -7,7 +7,7 @@
   </head>
   <body>
 
-      <form action="file://C:/xampp/htdocs/ProyectoFinalCarcel/Plantilla/Adminox_v1.3/Admin/default/PHP/Login/InicioLogin.php"  class="col-md-6 col-xs-3" id="formLogin" name="formLogin">
+      <form action=""  class="col-md-6 col-xs-3" id="formLogin" name="formLogin">
         <h2>Formulario de Login </h2>
         <input type="text" placeholder="&#128273; Usuario" name="usuario" id="usuario">
         <input type="password" placeholder="&#128274; Contraseña" name="pass" id="pass">
@@ -15,40 +15,30 @@
 
       </form>
       <script type="text/javascript">
-      $(.'#btnIngresar').click(function(){
+      $( "btnIngresar" ).OnClick(function() {
 
-} ) ;
-
-      });
-
+        var node = $(this);
+        $.ajax({
+            type:"POST",
+            url:"PHP/Login/VerificacionLogin.php",
+            data:{"usuario="usuario, "pass="pass}
+            }
+        });
+        .done(function(respuesta){
+           console.log("Exitos vroder");
+         })
+         .fail(function(resp){
+           console.log("falló vroder")
+         })
+         .always(function(){
+         console.log("complete");
+});
+});
 
       </script>
-      <!-- <script type="text/javascript">
-      jQuery(document).on('submit','#formLogin',function(event){
-        event.preventDefault();
 
-        jQuery.ajax({
-          url:'http://PHP/Login/login.php',
-          type: 'POST',
-          dataType:'Json',
-          data: $(this).serialize(),
-          beforeSend: function(){
-
-          }
-        })
-        .done(function(respuesta){
-          console.log(respuesta);
-        })
-        .fail(function(resp){
-          console.log(resp.responseText)
-        })
-        .always(function(){
-        console.log("complete");
-      });
-      });
-      </script> -->
       <script src="assets/js/jquery.min.js"></script>
-      
+
 
   </body>
 </html>

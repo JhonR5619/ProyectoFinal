@@ -1,3 +1,24 @@
+<?php
+  $formatos = array('.jpg','.png','.doc','.xlsx');
+  if (isset($_POST['boton'])) {
+    $nombreArchivo= $_FILES['Archivo']['name'];
+    $nombreTmpArchivo= $_FILES['Archivo']['tmp_name'];
+    $ext=substr($nombreArchivo,strrpos($nombreArchivo,'.'));
+    if (in_array($ext,$formatos)) {
+      if (move_uploaded_file($nombreTmpArchivo,"ImagenesGuardadas/$nombreArchivo")) {
+        echo "Archivo movido correctamente, $nombreArchivo";
+      }else {
+        echo "ocurrio un error";
+      }
+    }else {
+      echo "Ese no es un archivo permitido";
+    }
+  }
+?>
+
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -426,11 +447,16 @@
                                           </tr>
                                           <tr>
                                             <td> <button  type="button"   class="btn btn-sm btn-primary btn-rounded w-md waves-effect waves-light pull-right" id="btnRegistrar" >Registrar Persona</button></td>
-                                            <form class="" action="assets/PHP/file.php" method="post" enctype="multipart/form-data">
-                                              <td> <input type="file" name="archivo" id="archivo"> </td>
+                                            <form class="" action="" method="post" enctype="multipart/form-data">
+                                              <td> <input type="file" name="archivo" id="archivo" class="btn btn-sm btn-primary btn-rounded w-md waves-effect waves-light pull-right" > </td>
+                                              <td> <input type="submit" name="boton" value="Subir Archivo" > </td>
 
                                             </form>
+
+
                                           </tr>
+
+                                        
 
                                           </tbody>
 
@@ -475,7 +501,7 @@
         </div>
         <!-- END wrapper -->
 
-    
+
 
         <!-- jQuery  -->
         <script src="assets/js/jquery.min.js"></script>
