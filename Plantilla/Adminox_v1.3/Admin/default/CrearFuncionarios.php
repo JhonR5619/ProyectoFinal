@@ -229,7 +229,86 @@
 
 
                         <div class="row">
-                          <h2>hola como estan ustedes el dia de hoy</h2>
+                          <table class="table table-striped table-bordered">
+                              <thead>
+                              <tr>
+                                  <th></th>
+                                  <th >
+                                      REGISTRO DE LOS DATOS<br>
+                                  </th>
+
+                              </thead>
+                              <tbody>
+                              <tr>
+                                  <th class="text-nowrap" scope="row">Primer nombre</th>
+                                  <td><input type="text" name="PrimerNombre" id="PrimerNombre" size="45" required=""></td>
+
+                              </tr>
+                              <tr>
+                                  <th class="text-nowrap" scope="row">Segundo nombre</th>
+
+                                  <td><input type="text" name="SegundoNombre" id="SegundoNombre" size="45" required=""></td>
+
+                              </tr>
+                              <tr>
+                                  <th class="text-nowrap" scope="row">Primer apellido</th>
+                                  <td><input type="text" name="PrimerApellido" id="PrimerApellido" size="45" required=""></td>
+                              </tr>
+                              <tr>
+                                <th class="text-nowrap" scope="row">Segundo apellido</th>
+                                <td><input type="text" name="SegundoApellido" id="SegundoApellido" size="45" required=""></td>
+
+
+                              </tr>
+                              <tr>
+                                <th class="text-nowrap" scope="row">Documento</th>
+                                <td><input type="text" name="Documento" id="Documento" size="45" required=""></td>
+                              </tr>
+                              <tr>
+                                <th class="text-nowrap" scope="row">Celular</th>
+                                <td> <input type="number" name="Celular" id="Celular"  size="45" required></td>
+
+
+                              </tr>
+                              <tr>
+                                <th class="text-nowrap" scope="row">Rango</th>
+                                <td> <input type="text" name="Rango" id="Rango"  size="45" required></td>
+
+
+                              </tr>
+                              <tr>
+                                <th class="text-nowrap" scope="row">Permiso</th>
+                                <td> <input type="text" name="Permiso" id="Permiso"  size="45" required></td>
+
+
+                              </tr>
+                                <tr>
+                                <th class="text-nowrap" scope="row">Usuario</th>
+                                <td> <input type="text" name="Usuario" id="Usuario"  size="45" required></td>
+
+
+                              </tr>
+                              <tr>
+                                <th class="text-nowrap" scope="row">Contraseña</th>
+                                <td> <input type="text" name="password" id="password"  size="45" required></td>
+
+
+                              </tr>
+                              <tr>
+                                <td> <button  type="button"   class="btn btn-sm btn-primary btn-rounded w-md waves-effect waves-light pull-right" id="btnRegistrar" >Registrar Funcionario</button></td>
+
+                              </tr>
+
+
+
+                              </tbody>
+
+
+
+
+
+                            </table>
+
 
 
                         </div>

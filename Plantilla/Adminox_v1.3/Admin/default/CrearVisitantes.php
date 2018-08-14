@@ -229,7 +229,68 @@
 
 
                         <div class="row">
-                          <h2>hola como estan ustedes el dia de hoy</h2>
+                          <table class="table table-striped table-bordered">
+                              <thead>
+                              <tr>
+                                  <th></th>
+                                  <th >
+                                      REGISTRO DE LOS DATOS<br>
+                                  </th>
+
+                              </thead>
+                              <tbody>
+                              <tr>
+                                  <th class="text-nowrap" scope="row">Primer nombre</th>
+                                  <td><input type="text" name="PrimerNombre" id="PrimerNombre" size="45" required=""></td>
+
+                              </tr>
+                              <tr>
+                                  <th class="text-nowrap" scope="row">Segundo nombre</th>
+
+                                  <td><input type="text" name="SegundoNombre" id="SegundoNombre" size="45" required=""></td>
+
+                              </tr>
+                              <tr>
+                                  <th class="text-nowrap" scope="row">Primer apellido</th>
+                                  <td><input type="text" name="PrimerApellido" id="PrimerApellido" size="45" required=""></td>
+                              </tr>
+                              <tr>
+                                <th class="text-nowrap" scope="row">Segundo apellido</th>
+                                <td><input type="text" name="SegundoApellido" id="SegundoApellido" size="45" required=""></td>
+
+
+                              </tr>
+                              <tr>
+                                <th class="text-nowrap" scope="row">Documento</th>
+                                <td><input type="text" name="Documento" id="Documento" size="45" required=""></td>
+                              </tr>
+                              <tr>
+                                <th class="text-nowrap" scope="row">Ruta Imagen</th>
+                                <td> <input type="text" name="RutaImagen" id="RutaImagen" readonly="readonly" size="45"></td>
+
+
+                              </tr>
+                              <tr>
+                                <td> <button  type="button"   class="btn btn-sm btn-primary btn-rounded w-md waves-effect waves-light pull-right" id="btnRegistrar" >Registrar Persona</button></td>
+                                <form class="" action="" method="post" enctype="multipart/form-data">
+                                  <td> <input type="file" name="archivo" id="archivo" class="btn btn-sm btn-primary btn-rounded w-md waves-effect waves-light pull-right" > </td>
+                                  <td> <input type="submit" name="boton" value="Subir Archivo" > </td>
+
+                                </form>
+
+
+                              </tr>
+
+
+
+                              </tbody>
+
+
+
+
+
+                            </table>
+
 
 
                         </div>

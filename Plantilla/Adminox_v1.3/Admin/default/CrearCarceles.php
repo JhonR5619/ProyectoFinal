@@ -229,10 +229,43 @@
 
 
                         <div class="row">
-                          <h2>hola como estan ustedes el dia de hoy</h2>
+                          <table class="table table-striped table-bordered">
+                              <thead>
+                              <tr>
+                                  <th></th>
+                                  <th >
+                                      REGISTRO DE LOS DATOS<br>
+                                  </th>
+
+                              </thead>
+                              <tbody>
+                              <tr>
+                                  <th class="text-nowrap" scope="row">Nombre de la cárcel</th>
+                                  <td><input type="text" name="NombreCarcel" id="NombreCarcel" size="45" required=""></td>
+
+                              </tr>
+                              <tr>
+                                  <th class="text-nowrap" scope="row">Director de la cárcel</th>
+                                 <td><select class="" name="DirectorCarcel" id="DirectorCarcel"  required></select></td>
 
 
-                        </div>
+                              </tr>
+                              <tr>
+                                  <th class="text-nowrap" scope="row">Ubicación</th>
+                                 <td><select class="" name="Ubicacion" id="Ubicacion"  required></select></td>
+
+
+                              </tr>
+
+                              <tr>
+                                <td> <button  type="button"   class="btn btn-sm btn-primary btn-rounded w-md waves-effect waves-light pull-right" id="btnRegistrar" >Registrar Cárcel</button></td>
+                              </tr>
+
+                              </tbody>
+
+                        </table>
+
+                    </div>
                         <!-- end row -->
 
 
